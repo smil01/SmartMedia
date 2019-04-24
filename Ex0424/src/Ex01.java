@@ -1,7 +1,7 @@
 /**
  * 
  * @author 오대근
- * @content 첫수업
+ * @content 19.04.24 첫수업
  *
  */
 public class Ex01 {
@@ -11,6 +11,13 @@ public class Ex01 {
 
 	public static void main(String[] args) {
 		// method, 함수
+
+		// 출력명령
+		System.out.println(12345);
+		System.out.println(12345);
+
+		System.out.println(12 + 5);
+		System.out.println(12 + 5 + 7);
 	}
 
 }
