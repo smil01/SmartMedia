@@ -2,10 +2,10 @@ import java.util.Scanner;
 
 /**
  * 
- * @author	: 오대근
- * @date	: 2019. 4. 24.
- * @time	: 오후 6:17:22
- * @content	: 숙제2
+ * @author : 오대근
+ * @date : 2019. 4. 24.
+ * @time : 오후 6:17:22
+ * @content : 숙제2
  *
  */
 public class Ex숙제2 {
