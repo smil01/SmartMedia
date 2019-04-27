@@ -1,6 +1,14 @@
 import java.util.Scanner;
 
-public class forEx¼÷Á¦2 {
+/**
+ * 
+ * @author : ¿À´ë±Ù
+ * @date : 2019. 4. 27.
+ * @time : ¿ÀÈÄ 6:20:07
+ * @content : ¼÷Á¦
+ *
+ */
+public class for¼÷Á¦ {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
@@ -8,18 +16,13 @@ public class forEx¼÷Á¦2 {
 		System.out.print("Á¤¼ö ÀÔ·Â : ");
 		int num = scanner.nextInt();
 
-		for (int i = 0, j = 0; i < (num * 2 - 1); i++) {
-			for (int k = 0; k < j + num; k++) {
-				System.out.print((k < ((num - 1) - j)) ? " " : "*");
-			}
-			if (i < (num - 1)) {
-				j++;
-			} else {
-				j--;
+		for (int i = 1; i <= num; i++) {
+			for (int j = 0; j < i; j++) {
+				System.out.print("*");
 			}
 			System.out.println();
 		}
-		
+
 		scanner.close();
 	}
 
