@@ -1,7 +1,14 @@
 package 페스티벌;
 
 import java.util.Scanner;
-
+/**
+ * 
+ * @author	: 오대근
+ * @date	: 2019. 4. 30.
+ * @time	: 오후 5:12:53
+ * @content	: 난이도2
+ *
+ */
 public class Ex12 {
 
 	public static void main(String[] args) {
