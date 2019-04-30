@@ -1,5 +1,12 @@
 package 페스티벌;
-
+/**
+ * 
+ * @author	: 오대근
+ * @date	: 2019. 4. 30.
+ * @time	: 오후 3:39:07
+ * @content	: 난이도3
+ *
+ */
 public class Ex05 {
 
 	public static String change124(int n) { // 함수를 만들때 static을 꼭 써야지 main에서 호출가능 이유가 알고싶다면 저에게 오세요.
