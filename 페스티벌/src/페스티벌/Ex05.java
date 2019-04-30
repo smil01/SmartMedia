@@ -25,7 +25,7 @@ public class Ex05 {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println(change124(10));
+		System.out.println(change124(100));
 	}
 
 }
