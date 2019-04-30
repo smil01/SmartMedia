@@ -2,6 +2,14 @@ package 페스티벌;
 
 import java.util.Scanner;
 
+/**
+ * 
+ * @author	: 오대근
+ * @date	: 2019. 4. 30.
+ * @time	: 오후 3:50:47
+ * @content	: 난이도 1
+ *
+ */
 public class Ex06 {
 
 	public static void main(String[] args) {
@@ -27,7 +35,7 @@ public class Ex06 {
 		coin = coin % 500;
 
 		c_100 = coin / 100;
-		
+
 		System.out.println("10000원 : " + c_10000 + "개");
 		System.out.println("5000원 : " + c_5000 + "개");
 		System.out.println("1000원 : " + c_1000 + "개");
