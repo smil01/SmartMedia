@@ -15,7 +15,6 @@ public class CoinBank_main {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		CoinBank ATM = new CoinBank();
-
 		int menu = 0;
 
 		do {
