@@ -45,6 +45,7 @@ public class MemberMain {
 				System.out.println("[1]예약 [2]조회 [3]취소 [4]Info [5]ModifyPW [6]Logout");
 				select = scanner.nextInt();
 
+				
 				switch (select) {
 				case 4:
 					System.out.println(vo);
