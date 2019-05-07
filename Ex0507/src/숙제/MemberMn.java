@@ -1,3 +1,4 @@
+package ¼÷Á¦;
 import java.util.ArrayList;
 
 public class MemberMn {

@@ -1,3 +1,4 @@
+package ¼÷Á¦;
 
 public class MemberVO {
 	private String id;
