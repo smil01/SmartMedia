@@ -1,7 +1,11 @@
 import java.util.ArrayList;
 
 public class Phone {
-	private ArrayList<PhoneVO> list = new ArrayList<PhoneVO>();
+	private ArrayList<PhoneVO> list;
+
+	public Phone() {
+		list = new ArrayList<PhoneVO>();
+	}
 
 	public void insertList(PhoneVO vo) {
 		list.add(vo);
@@ -69,7 +73,7 @@ public class Phone {
 	public void searchPrint() {
 		System.out.print("검색어를 입력하세요 >> ");
 	}
-	
+
 	public void endPrint() {
 		System.out.println("=========전화번호관리 프로그램 종료========");
 	}

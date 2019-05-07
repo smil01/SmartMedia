@@ -33,7 +33,7 @@ public class PhoneMain {
 			case 3:
 				phone.searchPrint();
 				String name2 = scanner.next();
-				
+
 				phone.search(name2);
 				break;
 			case 4:
