@@ -1,4 +1,4 @@
-package Ex0508_Member.DTO;
+package Ex0508_Member;
 
 public class MemberDTO {
 	private String id;
@@ -11,7 +11,6 @@ public class MemberDTO {
 	}
 
 	public MemberDTO(String id, String pw, String name, String tel) {
-		super();
 		this.id = id;
 		this.pw = pw;
 		this.name = name;
@@ -50,9 +49,7 @@ public class MemberDTO {
 		this.tel = tel;
 	}
 
-	@Override
 	public String toString() {
 		return "id:" + id + ", pw:" + pw + ", name:" + name + ", tel:" + tel;
 	}
-
 }

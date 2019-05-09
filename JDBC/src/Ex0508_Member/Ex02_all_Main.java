@@ -1,10 +1,7 @@
-package Ex0508_Member.MAIN;
+package Ex0508_Member;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-
-import Ex0508_Member.DAO.MemberDAO;
-import Ex0508_Member.DTO.MemberDTO;
 
 public class Ex02_all_Main {
 
@@ -24,10 +21,13 @@ public class Ex02_all_Main {
 
 				System.out.print("ID 입력 >>");
 				dto.setId(sc.next());
+
 				System.out.print("PW 입력 >>");
 				dto.setPw(sc.next());
+
 				System.out.print("이름 입력 >>");
 				dto.setName(sc.next());
+
 				System.out.print("TEL 입력 >>");
 				dto.setTel(sc.next());
 
@@ -37,17 +37,11 @@ public class Ex02_all_Main {
 					System.out.println("가입에 실패하였습니다.");
 				}
 				break;
+
 			case 2:
 				System.out.println("[1]PW [2]NAME [3]TEL");
-				select = sc.nextInt();
-
-				System.out.print("ID 입력 >>");
-				String id = sc.next();
-				System.out.print("변경 값 입력 >>");
-				String val = sc.next();
 				String sql = "";
-
-				switch (select) {
+				switch (sc.nextInt()) {
 				case 1:
 					sql = "pw";
 					break;
@@ -58,15 +52,24 @@ public class Ex02_all_Main {
 					sql = "tel";
 					break;
 				}
+
+				System.out.print("ID 입력 >>");
+				String id = sc.next();
+
+				System.out.print("변경 값 입력 >>");
+				String val = sc.next();
+
 				if (dao.update(id, val, sql)) {
 					System.out.println("변경에 성공하였습니다.");
 				} else {
 					System.out.println("변경에 실패하였습니다.");
 				}
 				break;
+
 			case 3:
 				System.out.print("ID 입력 >>");
 				String id2 = sc.next();
+
 				System.out.print("PW 입력 >>");
 				String pw2 = sc.next();
 
@@ -76,12 +79,11 @@ public class Ex02_all_Main {
 					System.out.println("삭제에 실패하였습니다.");
 				}
 				break;
+
 			case 4:
 				ArrayList<MemberDTO> list = dao.selectAll();
-				if (list != null) {
-					for (int i = 0; i < list.size(); i++) {
-						System.out.println(i + 1 + ". " + list.get(i));
-					}
+				for (int i = 0; i < list.size(); i++) {
+					System.out.println(i + 1 + ". " + list.get(i));
 				}
 				break;
 			}

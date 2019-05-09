@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-import Ex0508_Member.DTO.MemberDTO;
+import Ex0508_Member.MemberDTO;
 
 public class Ex08_select {
 

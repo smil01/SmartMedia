@@ -1,4 +1,4 @@
-package Ex0508_Member.DAO;
+package Ex0508_Member;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,8 +6,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-
-import Ex0508_Member.DTO.MemberDTO;
 
 public class MemberDAO {
 	private Connection conn = null;
