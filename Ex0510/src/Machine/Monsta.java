@@ -1,5 +1,5 @@
 package Machine;
 
-public abstract class Monsta {
-	public abstract void pickMonsta();
+public interface Monsta {
+	public void pickMonsta();
 }

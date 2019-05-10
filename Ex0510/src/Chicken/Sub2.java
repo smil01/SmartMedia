@@ -1,11 +1,12 @@
 package Chicken;
 
-public class Sub2 extends Sub1{
+public class Sub2 extends Sub1 {
 	public void makeChi() {
 		System.out.println("Ä¡Áîº¼");
 	}
-	
+
 	public void makeChicken() {
 		System.out.println("¹é¼÷");
 	}
+
 }
