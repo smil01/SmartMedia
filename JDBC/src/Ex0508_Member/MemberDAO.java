@@ -112,6 +112,32 @@ public class MemberDAO {
 		return false;
 	}
 
+	public ArrayList<MemberDTO> select(String id) {
+		try {
+			ArrayList<MemberDTO> list = new ArrayList<MemberDTO>();
+
+			sql = "select * from member where id like = %||?||%";
+
+			pst = conn.prepareStatement(sql);
+			pst.setString(1, id);
+
+			rs = pst.executeQuery();
+
+			while (rs.next()) {
+				list.add(new MemberDTO(rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4)));
+			}
+
+			if (rs != null) {
+				return list;
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return null;
+	}
+
 	public ArrayList<MemberDTO> selectAll() {
 		try {
 			ArrayList<MemberDTO> list = new ArrayList<MemberDTO>();

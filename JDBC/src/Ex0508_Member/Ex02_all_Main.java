@@ -80,7 +80,7 @@ public class Ex02_all_Main {
 				}
 				break;
 
-			case 4:
+			case 4:			
 				ArrayList<MemberDTO> list = dao.selectAll();
 				for (int i = 0; i < list.size(); i++) {
 					System.out.println(i + 1 + ". " + list.get(i));
