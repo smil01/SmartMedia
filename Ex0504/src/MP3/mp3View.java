@@ -8,9 +8,6 @@ public class mp3View {
 		Scanner scanner = new Scanner(System.in);
 		mp3Controller mp3Player = new mp3Controller();
 
-		mp3Player.insertMusic(new mp3VO("업다운", "EXID", "D:\\mp3\\updown.mp3"));
-		mp3Player.insertMusic(new mp3VO("업타운펑크", "브루노마스", "D:\\mp3\\uptownpunk.mp3"));
-
 		int status = 0;
 		do {
 			mp3Player.menu();

@@ -1,0 +1,5 @@
+package ½ÃÇè;
+
+public interface Traffic {
+	public void go();
+}

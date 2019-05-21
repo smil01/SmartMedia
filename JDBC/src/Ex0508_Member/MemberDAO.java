@@ -162,5 +162,30 @@ public class MemberDAO {
 
 		return null;
 	}
+	
+	public ArrayList<MemberDTO> selectID() {
+		try {
+			ArrayList<MemberDTO> list = new ArrayList<MemberDTO>();
+
+			sql = "select id from member";
+
+			pst = conn.prepareStatement(sql);
+
+			rs = pst.executeQuery();
+
+			while (rs.next()) {
+				list.add(new MemberDTO(rs.getString(1)));
+			}
+
+			if (rs != null) {
+				return list;
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return null;
+	}
 
 }

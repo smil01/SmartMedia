@@ -18,6 +18,9 @@ public class mp3Controller {
 		list.add(new mp3VO("아이스크림케익", "레드벨벳", "D:\\mp3\\icecreamcake.mp3"));
 		list.add(new mp3VO("이럴거면 그러지말지", "백아연", "D:\\mp3\\no.mp3"));
 		list.add(new mp3VO("파아아아아티", "소녀시대", "D:\\mp3\\party.mp3"));
+		list.add(new mp3VO("업다운", "EXID", "D:\\mp3\\updown.mp3"));
+		list.add(new mp3VO("업타운펑크", "브루노마스", "D:\\mp3\\uptownpunk.mp3"));
+		
 		System.out.println("===============시작===============");
 	}
 
@@ -45,29 +48,37 @@ public class mp3Controller {
 		System.out.println("=============음악리스트=============");
 	}
 
-	public void play() {
+	public mp3VO play() {
 		stop();
 
 		System.out.println("┏━━━━┓");
 		System.out.println("┃     ∩ ∩     ┃");
 		System.out.println("┃┗━━┛┃ 재생 >> " + list.get(index).getSongName() + " - " + list.get(index).getSinger());
 		System.out.println("┗━┳┳━┛");
+		
+		mp3.play(list.get(index).getPath());
+		
+		return list.get(index);
 	}
 
-	public void previous() {
+	public mp3VO previous() {
 		indexCheck();
 
-		play();
+		mp3VO vo = play();
 
 		index--;
+		
+		return vo;
 	}
 
-	public void next() {
+	public mp3VO next() {
 		indexCheck();
 
-		play();
+		mp3VO vo = play();
 
 		index++;
+		
+		return vo;
 	}
 
 	public void indexCheck() {
